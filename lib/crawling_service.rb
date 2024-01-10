@@ -41,6 +41,8 @@ class CrawlingService
     next_btn = browser.element(css: 'li.next')
     next_disabled = browser.element(css: 'li.next.disabled').present?
     if next_btn.present? && !next_disabled
+      wait = Selenium::WebDriver::Wait.new(timeout: 10)
+      next_btn = wait.until { browser.element(css: 'li.next') }
       next_btn.click
     else
       @ongoing = false
