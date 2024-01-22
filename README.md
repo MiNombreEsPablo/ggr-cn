@@ -2,4 +2,4 @@
 
 Scraper program for GGR research
 
-## [Japanese CRI](https://japanese.cri.cn/)
+## [China News](https://www.china-news.co.jp)
