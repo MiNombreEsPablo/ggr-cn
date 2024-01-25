@@ -22,5 +22,5 @@ process_rows(input_csv, output_csv)
 input_csv.close
 output_csv.close
 
-`play lib/bleep.wav 2>/dev/null`
+`play -q lib/bleep.wav`
 puts 'Done!'
